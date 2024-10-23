@@ -1,12 +1,12 @@
 {
-  "homepage": "https://UGSNBandara/github.io/Protfolio-web1",
+  "homepage": "https://UGSNBandara.github.io/Protfolio-web1",
   "name": "protfolio-react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-oages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
