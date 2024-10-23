@@ -1,0 +1,26 @@
+name: Deploy Portfolio to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Run only on the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout the repository
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: npm install # If your project needs npm dependencies
+
+    - name: Build project
+      run: npm run build # If you have a build step (for React/Vue etc.)
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist  # Replace with your build directory (e.g., ./public for Hugo, ./dist for Vue)
