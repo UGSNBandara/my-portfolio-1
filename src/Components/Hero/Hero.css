@@ -46,11 +46,13 @@
     margin-bottom: 50px;
 }
 
-.hero-connect{
+.hero-connect-anchor{
     padding: 25px 45px;
     border-radius: 50px;
     background: linear-gradient(45deg, #158eff, #00aaff, #0059b3);
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
 .hero-resume{
@@ -60,7 +62,7 @@
     cursor: pointer;
 }
 
-.hero-connect:hover{
+.hero-connect-anchor:hover{
     border: 2px solid white;
 }
 

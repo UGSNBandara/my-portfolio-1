@@ -13,20 +13,48 @@
     font-size: 20px;
 }
 
-.nav-connect{
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nav-connect-anchor{
     padding: 20px 40px;
     border-radius: 50px;
     background: linear-gradient(45deg, #158eff, #00aaff, #0059b3);
     font-size: 22px;
     cursor: pointer;
-    transition: 0.5s;     
+    transition: 0.5s; 
+    text-decoration: none; 
+    color: white;   
 }   
 
-.nav-connect:hover{
+.nav-connect-anchor:hover{
     transform: scale(1.05);
 }
 
 .logo{
     width: 10%;
     height: auto;
+}
+
+.anchor-link{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+.anchor-link:hover{
+    border-color: #00aaff;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.anchor-link:active {
+    color: #00aaff;
+    border-color:#00aaff;
+    transform: scale(1.1);
 }
