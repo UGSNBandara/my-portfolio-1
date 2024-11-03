@@ -27,11 +27,18 @@
     cursor: pointer;
     transition: 0.5s; 
     text-decoration: none; 
-    color: white;   
+    color: white;  
+    border: solid #158eff; 
 }   
 
 .nav-connect-anchor:hover{
-    transform: scale(1.05);
+    border-color: white;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.nav-connect:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .logo{
@@ -57,4 +64,63 @@
     color: #00aaff;
     border-color:#00aaff;
     transform: scale(1.1);
+}
+
+.nav-mob-close{
+    display: none;
+}
+
+.nav-mob-open{
+    display: none;
+}
+
+@media(max-width:1500px){
+    .nav-connect{
+        display: none;
+    }
+}
+
+@media(max-width:1000px){
+    .navbar{
+        margin: 20px 50px;
+    }
+    .nav-connect-anchor{
+        display: none;
+        
+    }
+
+    .nav-mob-open{
+        display: block;
+        position: fixed;
+        right: 30px;
+    }
+
+    .nav-mob-close{
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 290px;
+        width: 30px;
+    }
+
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 30px;
+        background-color: #06013d;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -390px;
+    }
+
+    .nav-menu li{
+        font-size: 30px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
 }
