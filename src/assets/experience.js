@@ -1,10 +1,10 @@
 import project1_img from '../assets/project.jpg'
 
 
-const myExperience_data = [
+const experience = [
     {
         w_no:1,
-        w_name:"Xtrme",
+        w_name:"Xtreme",
         w_img:project1_img
     },
     {
@@ -34,4 +34,4 @@ const myExperience_data = [
     },
 ]
  
-export default mywork_data;
+export default experience;
